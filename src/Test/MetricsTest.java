@@ -13,7 +13,5 @@ public class MetricsTest {
         assertEquals(1,metric.dist(-0.1,0));
         assertEquals(0,metric.dist(1,1));
     }
-    void checkPosDef() {} //stub
-    void checkSymmetric() {} // stub
-    void checkTriangIneq() {} //stub
+
 }
