@@ -4,7 +4,7 @@ public class HammingDist implements Metric<String>{
     // returns the distance between t1 and t2 under the Hamming distance
     // returns the number of spaces where t1 and t2 differ
     @Override
-    public Number dist(String t1, String t2) {
+    public Integer dist(String t1, String t2) {
         if (t1.length() != t2.length()) {
             throw new DifferentSizeException();
         }
