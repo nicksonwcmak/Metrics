@@ -5,7 +5,7 @@ The purpose of this project is to review concepts of inheritance and unit testin
 
 To implement:
 1. Hamming distance.
-2. Absolute value distance. Use array to represent tuple?
-3. Manhattan distance.
+2. Absolute value distance.
+3. Taxicab metric.
 4. Any other interesting metrics I come across.
-5. (Challenging?) p-adic distance (for simplicity, only over integers? Only for one specific prime?)
+5. (Challenging?) p-adic distance (for simplicity, only over integers, and/or for one specific prime?)
