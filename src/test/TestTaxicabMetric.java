@@ -1,13 +1,14 @@
 package test;
 
-import main.AbsValMetric;
 import main.DifferentSizeException;
+import main.TaxicabMetric;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
-public class TestAbsValMetric extends TestVectorMetric{
-    AbsValMetric metric = new AbsValMetric();
+public class TestTaxicabMetric extends TestVectorMetric{
+    TaxicabMetric metric = new TaxicabMetric();
 
     @Test
     void testSingleNumber() {
@@ -28,11 +29,11 @@ public class TestAbsValMetric extends TestVectorMetric{
 
             double[] num3 = {1,1};
             double[] num4 = {0,0};
-            assertEquals(Math.sqrt(2),metric.dist(num3,num4));
+            assertEquals(2,metric.dist(num3,num4));
 
             double[] num5 = {1.2,-2.8,0};
             double[] num6 = {0.6,-2,3};
-            assertEquals(Math.sqrt(10),metric.dist(num5,num6));
+            assertEquals(4.4,metric.dist(num5,num6),d);
 
             checkPosDef(metric,num5,num6);
             checkSymmetric(metric,num5,num6);

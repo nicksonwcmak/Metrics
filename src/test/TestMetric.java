@@ -4,7 +4,7 @@ import main.Metric;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public abstract class TestMetric<T> {
+public class TestMetric<T> {
     void checkPosDef(Metric<T> m, T t1, T t2) {
         assertTrue((m.dist(t1,t2)).doubleValue() >= 0);
         assertEquals(0,m.dist(t1,t1));
