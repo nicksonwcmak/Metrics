@@ -12,7 +12,7 @@ public abstract class VectorMetric implements Metric<double[]> {
 
     // declares that dist will return a Double - to make tests easier
     @Override
-    public abstract Double dist(double t1[], double t2[]);
+    public abstract Double dist(double[] t1, double[] t2);
 
     // returns absolute value distance between t1 and t2
     // which is equal to the taxicab/Manhattan distance between t1 and t2
