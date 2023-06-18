@@ -7,8 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TestMetric<T> {
     void checkPosDef(Metric<T> m, T t1, T t2) {
         assertTrue((m.dist(t1,t2)).doubleValue() >= 0);
-        assertEquals(0,m.dist(t1,t1));
-        assertEquals(0,m.dist(t2,t2));
+        assertEquals(0,m.dist(t1,t1).doubleValue());
+        assertEquals(0,m.dist(t2,t2).doubleValue());
     }
 
     void checkSymmetric(Metric<T> m, T t1, T t2) {

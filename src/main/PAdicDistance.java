@@ -30,6 +30,7 @@ public class PAdicDistance implements Metric<Integer>{
     // returns the p-adic valuation of i
     // that is, the number of times p divides i
     // REQUIRES: i != 0
+    // RETURNS: number of factors of p in i (non-negative integer)
     private int PAdicVal(int i) {
         int n = 0;
         int curr = i;
